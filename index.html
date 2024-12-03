@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de SISACAL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Evaluación del Software SISACAL</h1>
+    </header>
+    <main>
+        <form id="evaluation-form">
+            <div class="form-group">
+                <label for="name">Nombre del Operario</label>
+                <input type="text" id="name" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Cargo</label>
+                <input type="text" id="role" placeholder="Ingrese su cargo" required>
+            </div>
+            <div class="form-group">
+                <label>¿Cómo calificarías la facilidad de uso del software?</label>
+                <select id="uso" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="Muy Satisfecho">Muy Satisfecho</option>
+                    <option value="Satisfecho">Satisfecho</option>
+                    <option value="Neutral">Neutral</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>¿Qué tan fácil te resultó aprender a usar el software SISACAL para registrar los parámetros de calidad del agua?</label>
+                <input type="number" id="aprendizaje" min="1" max="5" placeholder="Escala 1-5 (1 = Muy difícil, 5 = Muy fácil)" required>
+            </div>
+            <div class="form-group">
+                <label>¿Consideras que el software agilizó tu trabajo en comparación con el método anterior de registro en papel?</label>
+                <select id="agilizacion" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="Sí, mucho más rápido">Sí, mucho más rápido</option>
+                    <option value="Sí, ligeramente más rápido">Sí, ligeramente más rápido</option>
+                    <option value="No hay diferencia">No hay diferencia</option>
+                    <option value="Es más lento">Es más lento</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>¿Qué tan útil te parecieron las funcionalidades de visualización avanzada y generación de reportes en SISACAL?</label>
+                <input type="number" id="utilidad" min="1" max="5" placeholder="Escala 1-5 (1 = Nada útil, 5 = Muy útil)" required>
+            </div>
+            <div class="form-group">
+                <label>¿Los valores de los parámetros físico-químicos y microbiológicos registrados en el software te parecen claros y fáciles de interpretar?</label>
+                <input type="number" id="claridad" min="1" max="5" placeholder="Escala 1-5 (1 = Nada claros, 5 = Muy claros)" required>
+            </div>
+            <div class="form-group">
+                <label>¿Crees que el software facilita el seguimiento de los parámetros críticos para garantizar la calidad del agua tratada?</label>
+                <select id="facilita" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="Sí, completamente">Sí, completamente</option>
+                    <option value="Sí, en parte">Sí, en parte</option>
+                    <option value="No, no facilita">No, no facilita</option>
+                    <option value="No estoy seguro">No estoy seguro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>¿Encontraste algún problema o dificultad técnica mientras usabas el software?</label>
+                <textarea id="problemas" placeholder="Especifica los problemas, si los hubo"></textarea>
+            </div>
+            <div class="form-group">
+                <label>¿Qué funcionalidades adicionales te gustaría que el software tuviera para facilitar tu trabajo?</label>
+                <textarea id="funcionalidades" placeholder="Ejemplo: alertas automáticas, acceso remoto, etc."></textarea>
+            </div>
+            <div class="form-group">
+                <label>¿Recomendarías el uso de SISACAL en otras plantas de tratamiento de agua potable? ¿Por qué?</label>
+                <textarea id="recomendacion" placeholder="Escribe tu respuesta"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
